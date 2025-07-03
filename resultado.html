@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resultado</title>
+</head>
+<body>
+    <h1>Resultado da Votação</h1>
+    <p>Você votou no gênero: <strong>{{ genero }}</strong></p>
+    <p>Obrigado por votar, {{ nome }}!</p>
+    <a href="{{url_for('index')}}">
+        <button>Voltar para o início</button>
+    </a>
+</body>
+</html>

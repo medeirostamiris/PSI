@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Votar</title>
+</head>
+<body>
+    <h1>Votar</h1>
+    <form action="{{url_for('votar')}}" method="post">
+        <label for="nome">
+            Nome: 
+            <input type="text" name="nome" placeholder="nome">
+        </label>
+        <br><br>
+        <label>
+            <input type="radio" name="genero" value="acao">
+            Ação
+        </label><br>
+        <label>
+        <input type="radio" name="genero" value="comedia">
+            Comédia
+        </label><br>
+        <label>
+        <input type="radio" name="genero" value="drama">
+            Drama
+        </label><br>
+
+        <button type="submit">Enviar voto</button>
+    </form>
+    <br>
+    <a href="{{url_for('index')}}">Voltar para página inicial</a>
+</body>
+</html>
